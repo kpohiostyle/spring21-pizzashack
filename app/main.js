@@ -1,9 +1,9 @@
-import IngredientsController from "./Controllers/IngredientsController.js";
-import PizzasController from "./Controllers/PizzasController.js";
+import ItemsController from './Controllers/ItemsController.js';
 
 class App {
-  pizzasController = new PizzasController();
-  ingredientsController = new IngredientsController();
+
+
+  itemsController = new ItemsController();
 }
 
 window["app"] = new App();
