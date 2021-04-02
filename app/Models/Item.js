@@ -9,11 +9,12 @@ export default class Item {
     this.imgUrl = imgUrl
     this.counter = counter
     this.quantity = 0
+    this.total = 0
   }
 
   get Template() {
     return `
-    <div class="col">
+    <div class="col-md-4">
     <div class="card">
         <img class="card-img-top" src="${this.imgUrl}" alt="">
         <div class="card-body">
@@ -32,10 +33,13 @@ export default class Item {
 
   get Template2() {
     return `
-    <div class="col d-flex block m-2">
+    <div class="row justify-content-between ">
+    <div class="col m-2 d-flex block my-3">
     
-    <h5>${this.name}</h5>
-    <p>Price: $${this.price} - Quantity: ${this.quantity}</p>
+    <h5 class='pr-5'>${this.name}</h5>
+    <p>Quantity: ${this.quantity}</p>
+    <p>Total Price: $${this.total} <i class="fas fa-times ml-2 text-danger" onclick="app.itemsController.deleteItem('${this.id}')"></i> </p>
+    </div>
     </div>
     `
   }
