@@ -1,17 +1,17 @@
-import {ProxyState} from '../AppState.js'
+import { ProxyState } from '../AppState.js'
 
 export default class Item {
   constructor(name, price, description, imgUrl, counter, id) {
     this.id = id
     this.name = name
-    this.price  = price 
+    this.price = price
     this.description = description
     this.imgUrl = imgUrl
     this.counter = counter
     this.quantity = 0
   }
 
-  get Template(){
+  get Template() {
     return `
     <div class="col">
     <div class="card">
@@ -30,14 +30,12 @@ export default class Item {
     `
   }
 
-  get Template2(){
+  get Template2() {
     return `
-    <div class="col">
-    <div>
-    <p>${this.name}</p>
-    <p>${this.price}</p>
-    <p>${this.quantity}</p>
-    </div>
+    <div class="col d-flex block m-2">
+    
+    <h5>${this.name}</h5>
+    <p>Price: $${this.price} - Quantity: ${this.quantity}</p>
     </div>
     `
   }

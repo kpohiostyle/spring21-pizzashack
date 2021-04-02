@@ -4,8 +4,9 @@ import Item from './Models/Item.js'
 
 class AppState extends EventEmitter {
 
-/** @type {Item []} */
-  items = [new Item('Supreme', 5, 'this is some stuff','https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1409&q=80', 5, 215)]
+  /** @type {Item []} */
+  items = [new Item('Supreme', 5, 'this is some stuff', 'https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1409&q=80', 5, 215),
+  new Item('Dog Collar', 10, 'this is a dog collar', 'https://www.dogtagart.com/sites/default/files/collar_product/basicblack-27553-lg_0.jpg', 15, 5545)]
 
   cart = []
 

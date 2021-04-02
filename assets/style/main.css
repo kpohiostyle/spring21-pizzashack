@@ -10695,6 +10695,10 @@ main {
   flex-grow: 1;
 }
 
+.card img{
+  max-height: 30vh;
+}
+
 .small {
   background-color: #FF3697;
   color: white;
